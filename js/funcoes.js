@@ -135,8 +135,8 @@ function moverQuadrados2() {
   }
   if (baixo  && !cima) {
     quadrado2.posY += quadrado2.velocidade;
-  }
-
+  }  
+  
  //fiixar na tela - NÃO SAI DO CANVAS
   quadrado2.posX = Math.max(0, Math.min(cnv.width - quadrado2.width, quadrado2.posX));
   quadrado2.posY = Math.max(0, Math.min(cnv.height - quadrado2.height, quadrado2.posY));
