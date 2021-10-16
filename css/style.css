@@ -26,3 +26,16 @@
 .hub-direita{
     margin: 0px 0px 0px 20%;
 }
+
+.barra-vida{
+    width: 200%;
+    height: 6px;
+    background: #008000;
+}
+
+.hub-texto-p{
+    margin: 0px 0px 0px 100%;
+}
+.img-robo02{
+    margin: 0px 0px 0px 120%;
+}
