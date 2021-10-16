@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Para poder saber aonde que a hub está ficando para tentar alinhar com o jogo */
+.hub-vida{
+    margin: 10px 0px 0px 24%;
+    width: 52%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.hub-esquerda,.hub-direita{
+    display: flex;
+}
+
+.hub-esquerda{
+    margin: 0px 20% 0px 0px;
+}
+
+.hub-direita{
+    margin: 0px 0px 0px 20%;
+}
