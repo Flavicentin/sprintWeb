@@ -31,6 +31,8 @@
     width: 200%;
     height: 6px;
     background: #008000;
+    animation-name: slider;
+    animation-duration: 2s;
 }
 
 .hub-texto-p{
@@ -38,4 +40,15 @@
 }
 .img-robo02{
     margin: 0px 0px 0px 120%;
+}
+
+/* Animações */
+
+@keyframes slider{
+    from{
+        width:0%;
+    }
+    to{
+        width:200%;
+    }
 }
