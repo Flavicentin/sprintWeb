@@ -8,7 +8,8 @@
 
 /* Para poder saber aonde que a hub está ficando para tentar alinhar com o jogo */
 .hub-vida{
-    margin: 10px 0px 0px 24%;
+    padding: 1% 0px 0px 0px;
+    margin: 5% 0px 0px 24%;
     width: 52%;
     border: 1px solid black;
     display: flex;
@@ -28,11 +29,10 @@
 }
 
 .barra-vida{
-    width: 200%;
-    height: 6px;
-    background: #008000;
+    height: 10px;
     animation-name: slider;
     animation-duration: 2s;
+    border: 2px dashed black;
 }
 
 .hub-texto-p{
