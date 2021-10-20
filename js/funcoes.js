@@ -14,9 +14,15 @@
   let moveUp = false;
   let moveRight = false;
   let moveDown = false;
+  let colidiu=false;
+
   // arrays
   const quadrados = [];
-  const vetorblocks=[];
+  const posicaoX1=[];
+  const posicaoY1=[];
+
+  const posicaoX2=[];
+  const posicaoY2=[];
 
   // quadrados
   const quadrado1 = new Quadrado(50, 10, 100, 100, "#f60", 5);
@@ -79,42 +85,16 @@
    //fiixar na tela - NÃO SAI DO CANVAS
     quadrado1.posX = Math.max(0, Math.min(cnv.width - quadrado1.width, quadrado1.posX));
     quadrado1.posY = Math.max(0, Math.min(cnv.height - quadrado1.height, quadrado1.posY));
-  
-    //colisões
-    // for(let i in vetorblocks){
-    //   let blk = vetorblocks[i];
-    //   if(blk.visible)
-    //   {
-    //     blockRect(blk,quadrado1);
-    //   }
-    //   for(let j in vetorblocks){
-    //     if(j !== i ){
-    //       let blk2 = vetorblocks[j];
-    //       blockRect(blk2,blk);
-    //     }
-    //   }
-    // }
+    
 
-
-    if(quadrado1.posX == quadrado2.posX && quadrado1.posY == quadrado2.posY){
-      contador++;
+    if(quadrado1.posX == quadrado2.posX && quadrado1.posY  === quadrado2.posY)
+    {
+      colidiu = true;
+      console.log(colidiu);
     }
   }
 
-  let vida=100;
-  let vidaTotal=0;
 
-  function descontaVida()
-  {
-    if(contador == 5)
-    {
-      for(let i=0; i<=20;i++)
-      {
-        
-      }
-    }
-  }  
-  
   
 
   let esquerda = false;
