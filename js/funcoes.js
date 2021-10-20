@@ -18,11 +18,8 @@
 
   // arrays
   const quadrados = [];
-  const posicaoX1=[];
-  const posicaoY1=[];
-
-  const posicaoX2=[];
-  const posicaoY2=[];
+  let vida1 = 100;
+  let vida2 = 100;
 
   // quadrados
   const quadrado1 = new Quadrado(50, 10, 100, 100, "#f60", 5);
@@ -86,12 +83,34 @@
     quadrado1.posX = Math.max(0, Math.min(cnv.width - quadrado1.width, quadrado1.posX));
     quadrado1.posY = Math.max(0, Math.min(cnv.height - quadrado1.height, quadrado1.posY));
     
+    function descontaVida()
+    {      
+      
+      document.querySelector('#hub-p-vida').textContent =  vida1 -= Math.floor(Math.random()*20);
+      document.querySelector('#hub-vida').textContent = vida2 -= Math.floor(Math.random()*20);
+      
 
-    if(quadrado1.posX == quadrado2.posX && quadrado1.posY  === quadrado2.posY)
+      console.log(vida);
+    }
+
+    if(quadrado1.posX == quadrado2.posX && quadrado1.posY  == quadrado2.posY)
     {
+      
+      contador++;
       colidiu = true;
       console.log(colidiu);
+      descontaVida()
     }
+
+    if(contador>5)
+    {
+      let esquerda = false;
+      let cima = false;
+      let direita = false;
+      let baixo = false;
+      
+    }
+
   }
 
 
